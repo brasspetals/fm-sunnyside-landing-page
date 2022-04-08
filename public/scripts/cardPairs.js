@@ -7,7 +7,7 @@ export const cardPairs = [
   },
   {
     heading: "Stand out to the right audience",
-    description: "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. ",
+    description: "Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.",
     srcset: "./images/mobile/image-stand-out.jpg, ./images/desktop/image-stand-out.jpg 700w",
     color: "pink"
   }

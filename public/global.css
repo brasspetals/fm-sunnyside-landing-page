@@ -2,7 +2,7 @@
   --color-pink: hsl(7, 99%, 70%);
   --color-yellow: hsl(51, 100%, 49%);
   --color-dark-green: hsl(167, 40%, 24%);
-  --color-dark-blue: hsl(198, 62%, 26%);
+  --color-blue: hsl(198, 62%, 26%);
   --color-green: hsl(168, 34%, 41%);
   --color-dark-blue: hsl(212, 27%, 19%);
   --color-dark-gray: hsl(213, 9%, 39%);
@@ -25,10 +25,7 @@ body {
   font-weight: 600;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1,h2,h3,h4 {
   font-family: "Fraunces", serif;
   font-weight: 900;
 }

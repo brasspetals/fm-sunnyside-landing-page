@@ -23,6 +23,7 @@
   .pair__text {
     padding: 4rem 1.5rem;
     display: grid;
+    justify-items: center;
   }
 
   h2 {
