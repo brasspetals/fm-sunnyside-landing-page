@@ -41,7 +41,6 @@
 
   h1 {
     margin-top: 5.25rem;
-    font-weight: 900;
     font-size: 2.5rem;
     letter-spacing: 0.3969rem;
     color: var(--color-white);
