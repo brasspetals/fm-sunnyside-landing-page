@@ -30,7 +30,7 @@
     letter-spacing: -0.0081rem;
     line-height: 1.778;
     color: var(--color-dark-gray);
-    margin-bottom: 1.9375rem;
+    margin-bottom: 2rem;
   }
 
   .testimonial__name {

@@ -14,7 +14,7 @@
 
 <style>
   .client-testimonials {
-    padding: 3.9375rem 1.5rem;
+    padding: 4rem 1.5rem 5.375rem;
     text-align: center;
   }
 

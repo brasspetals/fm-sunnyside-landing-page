@@ -34,10 +34,10 @@
 
   .menu {
     position: absolute;
-    top: 74px;
+    top: 4.625rem;
     right: 0;
     width: 100%;
-    max-width: 500px;
+    max-width: 31.25rem;
     display: grid;
     justify-items: center;
     grid-gap: 2rem;
@@ -57,9 +57,10 @@
 
   .menu-item {
     color: var(--color-gray-blue);
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.25;
+    letter-spacing: -0.0088rem;
   }
 
   .menu-contact {
@@ -67,10 +68,10 @@
     text-transform: uppercase;
     font-family: "Fraunces", serif;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 1.667;
     background-color: var(--color-yellow);
     border-radius: 2rem;
-    padding: 16px 32px;
+    padding: 1rem 2rem;
   } 
 </style>

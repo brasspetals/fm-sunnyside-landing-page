@@ -1,12 +1,11 @@
 <script>
   import Nav from '../Nav.svelte'
+  import Logo from '../Logo.svelte'
 </script>
 
 <header>
   <div class="masthead">
-    <a href="/">
-      <img src="/images/logo.svg" alt="Sunnyside - Home" class="logo">
-    </a>
+    <Logo/>
     <Nav/>
   </div>
   <div class="hero">
