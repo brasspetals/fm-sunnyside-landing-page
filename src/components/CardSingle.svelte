@@ -12,6 +12,7 @@
 <style>
   .service {
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 135vw;
     min-height: 37.5rem;
