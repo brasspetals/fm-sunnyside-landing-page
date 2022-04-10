@@ -59,13 +59,19 @@
     }
 
     h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       letter-spacing: 0.5469rem;
       margin-top: 6.5625rem;
     }
 
     .hero img {
       margin-top: 5.75rem;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    h1 {
+      font-size: 3.5rem;
     }
   }
 </style>

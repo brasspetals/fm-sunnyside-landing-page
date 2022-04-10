@@ -21,4 +21,10 @@
     justify-items: center;
     position: relative;
   }
+
+  @media screen and (min-width: 750px) {
+    footer {
+      padding: 4.5rem 2.5rem 6rem;
+    }
+  }
 </style>

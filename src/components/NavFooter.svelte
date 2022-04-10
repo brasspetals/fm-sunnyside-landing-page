@@ -18,7 +18,7 @@
     font-size: 1.125rem;
     line-height: 1.3889;
     letter-spacing: -0.0081rem;
-    transition: color .4s ease;
+    transition: color .2s ease;
   }
 
   .navlist__item:hover {

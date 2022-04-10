@@ -31,6 +31,7 @@
     line-height: 1.778;
     color: var(--color-dark-gray);
     margin-bottom: 2rem;
+    max-width: 39ch;
   }
 
   .testimonial__name {
@@ -45,8 +46,19 @@
   .testimonial__occupation {
     color: var(--color-gray);
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.786;
-    letter-spacing: -0.1px;
+    letter-spacing: -0.0063rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .testimonial__avatar {
+      margin-bottom: 3.625rem;
+    }
+
+    .testimonial__text {
+      max-width: 34ch;
+      margin-bottom: 4.25rem;
+    }
   }
 </style>

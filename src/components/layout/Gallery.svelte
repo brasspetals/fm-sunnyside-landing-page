@@ -1,10 +1,14 @@
-<script></script>
+<script>
+  import {gallery} from '../../../public/scripts/gallery'
+</script>
 
 <div class="gallery">
-  <img src="/images/mobile/image-gallery-milkbottles.jpg" alt="">
-  <img src="/images/mobile/image-gallery-orange.jpg" alt="">
-  <img src="/images/mobile/image-gallery-cone.jpg" alt="">
-  <img src="/images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+  {#each gallery as image}
+    <picture>
+      <source srcset="{image.srcset}" media="{image.media}">
+      <img src="{image.src}" alt="">
+    </picture>
+  {/each}
 </div>
 
 <style>
@@ -16,5 +20,11 @@
   .gallery img {
     width: 100%;
     display: block;
+  }
+
+  @media screen and (min-width: 750px) {
+    .gallery {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 </style>

@@ -18,7 +18,6 @@
   }
 
   @media screen and (min-width: 1325px) {
-
     :global(.pair:nth-of-type(odd) > .pair__text) {
       justify-content: right;
       padding-right: 6.5625rem;

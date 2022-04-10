@@ -5,7 +5,12 @@
 
 <div class="pair">
   <div class="pair__img">
-    <img srcset="{card.srcset}" alt="">
+    <picture>
+      <source srcset="{card.srcset}"
+      media="{card.media}">
+      <img srcset="{card.src}" alt="">
+    </picture>
+    
   </div>
   <div class="pair__text">
     <h2>{card.heading}</h2>
@@ -54,7 +59,12 @@
       display: grid;
       grid-auto-flow: column;
       grid-template-columns: 1fr 1fr;
-      height: 31.25rem;
+      height: 28.125rem;
+      overflow: hidden;
+    }
+
+    .pair__img {
+      overflow: hidden;
     }
 
     img {
@@ -63,23 +73,14 @@
     }
 
     .pair__text {
-      text-align: left;
+      align-self: center;
       align-content: center;
-      justify-items: left;
       justify-content: center;
-      padding: 4rem 2rem;
-    }
-
-    h2 {
-      max-width: 15ch;
+      padding: 4rem 2.5rem;
     }
 
     p {
-      max-width: 44ch;
-    }
-
-    :global(.pair__text a) {
-      margin-left: 0.5625rem;
+      max-width: 37ch;
     }
   }
 
@@ -89,17 +90,24 @@
     }
 
     .pair__text {
-      padding: 4rem 2.5rem;
+      text-align: left;
+      justify-items: left;
     }
 
     h2 {
       font-size: 2.5rem;
       letter-spacing: -0.0181rem;
       margin-bottom: 2rem;
+      max-width: 15ch;
     }
 
     p {
       margin-bottom: 2.5rem;
+      max-width: 44ch;
+    }
+
+    :global(.pair__text a) {
+      margin-left: 0.5625rem;
     }
     
   }
