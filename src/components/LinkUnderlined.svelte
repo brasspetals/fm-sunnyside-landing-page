@@ -38,6 +38,11 @@
     opacity: 1;
   }
 
+  a:focus-visible {
+    outline: 0.1875rem dashed hsla(212, 27%, 19%, 85%);
+    outline-offset: 0.5rem;
+  }
+
   .yellow {
     --card-color: hsl(51, 100%, 49%);
   }

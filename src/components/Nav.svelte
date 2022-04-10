@@ -23,6 +23,11 @@
     transition: opacity .4s ease;
   }
 
+  button:focus-visible {
+    outline: 0.1875rem dashed var(--color-white);
+    outline-offset: 0.3125rem;
+  }
+
   .open {
     opacity: 0.6;
   }
@@ -62,7 +67,12 @@
     letter-spacing: -0.0088rem;
   }
 
-  .menu__contact {
+  .menu__item a:focus-visible {
+    outline: 0.1875rem dashed var(--color-gray-blue);
+    outline-offset: 0.3125rem;
+  }
+
+  .menu__contact a {
     color: var(--color-dark-blue);
     text-transform: uppercase;
     font-family: "Fraunces", serif;
@@ -74,6 +84,11 @@
     padding: 1rem 2rem;
     cursor: pointer;
   } 
+
+  .menu__contact a:focus-visible {
+      outline: 0.1875rem dashed var(--color-gray-blue);
+      outline-offset: 0.3125rem;
+    }
 
   @media screen and (min-width: 800px) {
     nav {
@@ -111,14 +126,22 @@
       letter-spacing: -0.0081rem;
     }
 
-    .menu__contact {
-      background-color: var(--color-white);
-      transition: all .2s ease;
+    .menu__item a:focus-visible {
+      outline: 0.1875rem dashed var(--color-white);
     }
 
-    .menu__contact:hover {
+    .menu__contact a {
+      background-color: var(--color-white);
+      transition: color .2s ease, background-color .2s ease;
+    }
+
+    .menu__contact a:hover {
       background-color: hsla(0, 0%, 100%, 25%);
       color: var(--color-white);
+    }
+
+    .menu__contact a:focus-visible {
+      outline: 0.1875rem dashed var(--color-white);
     }
   }
 </style>

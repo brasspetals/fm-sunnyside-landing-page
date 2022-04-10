@@ -1,19 +1,19 @@
 <nav aria-label="footer navigation">
-  <ul class="navlist">
-    <li class="navlist__item"><a href="/">About</a></li>
-    <li class="navlist__item"><a href="/">Services</a></li>
-    <li class="navlist__item"><a href="/">Projects</a></li>
+  <ul class="footer-nav">
+    <li class="footer-nav__item"><a href="/">About</a></li>
+    <li class="footer-nav__item"><a href="/">Services</a></li>
+    <li class="footer-nav__item"><a href="/">Projects</a></li>
   </ul>
 </nav>
 
 <style>
-  .navlist {
+  .footer-nav {
     display: grid;
     grid-auto-flow: column;
     gap: 3.5625rem;
   }
 
-  .navlist__item {
+  .footer-nav__item {
     color: var(--color-green);
     font-size: 1.125rem;
     line-height: 1.3889;
@@ -21,7 +21,12 @@
     transition: color .2s ease;
   }
 
-  .navlist__item:hover {
+  .footer-nav__item a:focus-visible {
+    outline: 0.1875rem dashed var(--color-white);
+    outline-offset: 0.3125rem;
+  }
+
+  .footer-nav__item:hover {
     color: var(--color-white);
   }
 </style>

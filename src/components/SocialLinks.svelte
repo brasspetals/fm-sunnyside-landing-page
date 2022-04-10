@@ -32,11 +32,21 @@
     align-items: center;
     margin-top: 5.5rem;
   }
+
+  .social li {
+    display: flex;
+  }
+
   .social__icon * {
     transition: fill .2s ease;
   }
 
   .social__icon:hover * {
     fill: var(--color-white);
+  }
+
+  .social__icon:focus-visible {
+    outline: 0.1875rem dashed var(--color-white);
+    outline-offset: 0.3125rem;
   }
 </style>

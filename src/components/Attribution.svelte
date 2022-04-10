@@ -6,7 +6,7 @@
 
 <style>
   .attribution {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--color-green);
     text-align: center;
     width: 100%; 
@@ -14,7 +14,7 @@
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    padding: 0 24px;
+    padding: 0 1.5rem;
   }
 
   a {
@@ -25,5 +25,9 @@
 
   a:hover {
     color: var(--color-white);
+  }
+
+  a:focus-visible {
+   outline: 0.125rem dashed var(--color-white);
   }
 </style>
