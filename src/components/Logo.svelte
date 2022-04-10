@@ -8,14 +8,24 @@
 </a>
 
 <style>
-  .footer svg {
-    width: 10.625rem;
-    height: auto;
+  .footer {
     margin-left: -0.75rem;
     margin-bottom: 2.375rem;
   }
 
+  .footer svg {
+    width: 10.625rem;
+    height: auto;
+  }
+
   .footer svg path {
     fill: #2C7566;
+  }
+
+  @media screen and (min-width: 750px) {
+    .header svg {
+      width: 10.625rem;
+      height: auto;
+    }
   }
 </style>

@@ -12,7 +12,7 @@
 <style>
   .service {
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
     height: 135vw;
     min-height: 37.5rem;
@@ -46,5 +46,27 @@
     font-size: 1rem;
     line-height: 1.6875;
     letter-spacing: -0.0069rem;
+    max-width: 50ch;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 550px) {
+    .service {
+      height: 37.5rem;
+    }
+
+    .graphic-design {
+      background-image: url('/images/desktop/image-graphic-design.jpg');
+    }
+
+    .photography {
+      background-image: url('/images/desktop/image-photography.jpg');
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    p {
+      max-width: 36ch;
+    }
   }
 </style>

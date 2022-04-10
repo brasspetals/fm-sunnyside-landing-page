@@ -10,6 +10,7 @@
   --color-gray-blue: hsl(232, 10%, 55%);
   --color-gray: hsl(206, 4%, 67%);
   --color-white: hsl(0, 0%, 100%);
+  --color-white-bg: hsl(0, 0%, 95%);
 }
 
 *,

@@ -4,7 +4,7 @@
   export let href = '/'
 </script>
 
-<a href="{href}" class="{color}">{text}</a>
+<a href="{href}" class="underlined {color}">{text}</a>
 
 <style>
   a {
@@ -45,5 +45,4 @@
   .pink {
     --card-color: hsl(7, 99%, 70%);
   }
-
 </style>

@@ -5,7 +5,7 @@
 
 <header>
   <div class="masthead">
-    <Logo/>
+    <Logo type="header"/>
     <Nav/>
   </div>
   <div class="hero">
@@ -23,6 +23,8 @@
     background-repeat: no-repeat;
     padding: 2rem 1.5rem;
     min-height: 33.625rem;
+    height: 140vw;
+    max-height: 800px;
     position: relative;
   }
 
@@ -50,4 +52,20 @@
     margin-top: 3rem;
   }
 
+  @media screen and (min-width: 750px) {
+    header {
+      padding: 2.125rem 2.5rem;
+      background-image: url('/images/desktop/image-header.jpg');
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      letter-spacing: 0.5469rem;
+      margin-top: 6.5625rem;
+    }
+
+    .hero img {
+      margin-top: 5.75rem;
+    }
+  }
 </style>

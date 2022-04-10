@@ -11,10 +11,10 @@
     <img src="/images/icon-hamburger.svg" alt="">
   </button>
   <ul class="menu" class:closed={!active}>
-    <li class="menu-item"><a href="/">About</a></li>
-    <li class="menu-item"><a href="/">Services</a></li>
-    <li class="menu-item"><a href="/">Projects</a></li>
-    <li class="menu-contact"><a href="/">Contact</a></li>
+    <li class="menu__item"><a href="/">About</a></li>
+    <li class="menu__item"><a href="/">Services</a></li>
+    <li class="menu__item"><a href="/">Projects</a></li>
+    <li class="menu__contact"><a href="/">Contact</a></li>
   </ul>
 </nav>
 
@@ -37,12 +37,11 @@
     top: 4.625rem;
     right: 0;
     width: 100%;
-    max-width: 31.25rem;
     display: grid;
     justify-items: center;
     grid-gap: 2rem;
     padding: 2.5rem 0;
-    background-color: var(--color-white);
+    background-color: #FFFCF8;
     transition: all .3s ease;
   }
 
@@ -52,10 +51,10 @@
     top: -1.5rem;
     right: 0;
     border: .75rem solid;
-    border-color: transparent var(--color-white) var(--color-white)transparent;
+    border-color: transparent #FFFCF8 #FFFCF8 transparent;
   }
 
-  .menu-item {
+  .menu__item {
     color: var(--color-gray-blue);
     font-weight: 600;
     font-size: 1.25rem;
@@ -63,7 +62,7 @@
     letter-spacing: -0.0088rem;
   }
 
-  .menu-contact {
+  .menu__contact {
     color: var(--color-dark-blue);
     text-transform: uppercase;
     font-family: "Fraunces", serif;
@@ -73,5 +72,53 @@
     background-color: var(--color-yellow);
     border-radius: 2rem;
     padding: 1rem 2rem;
+    cursor: pointer;
   } 
+
+  @media screen and (min-width: 800px) {
+    nav {
+      margin-right: 0.4375rem;
+    }
+
+    button {
+      display: none;
+    }
+
+    .closed {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .menu {
+      background-color: unset;
+      position: relative;
+      top: unset;
+      right: unset;
+      grid-auto-flow: column;
+      align-items: center;
+      padding: unset;
+      gap: 3rem;
+    }
+
+    .menu::before {
+      display: none;
+    }
+
+    .menu__item {
+      color: var(--color-white);
+      font-size: 1.125rem;
+      line-height: 1.3889;
+      letter-spacing: -0.0081rem;
+    }
+
+    .menu__contact {
+      background-color: var(--color-white);
+      transition: all .2s ease;
+    }
+
+    .menu__contact:hover {
+      background-color: hsla(0, 0%, 100%, 25%);
+      color: var(--color-white);
+    }
+  }
 </style>
