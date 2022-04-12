@@ -8,7 +8,7 @@
     <picture>
       <source srcset="{card.srcset}"
       media="{card.media}">
-      <img srcset="{card.src}" alt="">
+      <img src="{card.src}" alt="">
     </picture>
     
   </div>
