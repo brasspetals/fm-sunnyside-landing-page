@@ -10,11 +10,27 @@
   </div>
   <div class="hero">
     <h1>We are creatives</h1>
-    <img src="/images/icon-arrow-down.svg" alt="">
+    <img src="/images/icon-arrow-down.svg" alt="" class="bounce">
   </div>
 </header>
 
 <style>
+  @keyframes bounce {
+    0% { 
+      transform: translateY(0);
+    }
+    50% { 
+      transform: translateY(1.5rem);
+    }
+    100% { 
+      transform: translateY(0);
+    }
+  }
+
+  .bounce {
+    animation: bounce 1.6s cubic-bezier(.46,0,.47,1.01) infinite;
+  }
+
   header {
     background-color:#3ebfff;
     background-image: url('/images/mobile/image-header.jpg');

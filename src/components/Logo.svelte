@@ -8,12 +8,6 @@
 </a>
 
 <style>
-  .logo--header:focus-visible,
-  .logo--footer:focus-visible {
-    outline: 0.1875rem dashed var(--color-white);
-    outline-offset: 0.3125rem;
-  }
-
   .logo--footer {
     margin-bottom: 2.375rem;
   }
@@ -25,6 +19,17 @@
 
   .logo--footer svg path {
     fill: #2C7566;
+    transition: .2s ease;
+  }
+
+  .logo--footer:hover svg path {
+    fill: var(--color-white);
+  }
+
+  .logo--header:focus-visible,
+  .logo--footer:focus-visible {
+    outline: 0.1875rem dashed var(--color-white);
+    outline-offset: 0.3125rem;
   }
 
   @media screen and (min-width: 750px) {
