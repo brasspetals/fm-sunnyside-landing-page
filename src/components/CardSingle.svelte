@@ -53,6 +53,8 @@
   @media screen and (min-width: 550px) {
     .service {
       height: 37.5rem;
+      height: 40vw;
+      max-height: 43.75rem;
     }
 
     .graphic-design {

@@ -39,7 +39,7 @@
   }
 
   a:focus-visible {
-    outline: 0.1875rem dashed hsla(212, 27%, 19%, 85%);
+    outline: 0.1875rem dashed var(--color-gray-blue);
     outline-offset: 0.5rem;
   }
 

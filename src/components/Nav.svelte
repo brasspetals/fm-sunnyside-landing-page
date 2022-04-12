@@ -18,11 +18,11 @@
     <img src="/images/icon-hamburger.svg" alt="">
   </button>
   {#if active || width >= 800}
-    <ul class="menu" transition:fade={{duration: 400}}>
-      <li class="menu__item" in:fly={{duration: 600, x: -16, delay: 200}} out:fade><a href="/">About</a></li>
-      <li class="menu__item" in:fly={{duration: 600, x: -16, delay:450}} out:fade><a href="/">Services</a></li>
-      <li class="menu__item" in:fly={{duration: 600, x: -16, delay:700}} out:fade><a href="/">Projects</a></li>
-      <li class="menu__contact" in:fly={{duration: 600, x: -16, delay:950}} out:fade>
+    <ul class="menu animate-none" transition:fade={{duration: 400}}>
+      <li class="menu__item animate-none" in:fly={{duration: 500, y: -16, delay: 200}} out:fade><a href="/">About</a></li>
+      <li class="menu__item animate-none" in:fly={{duration: 500, y: -16, delay:400}} out:fade><a href="/">Services</a></li>
+      <li class="menu__item animate-none" in:fly={{duration: 500, y: -16, delay:600}} out:fade><a href="/">Projects</a></li>
+      <li class="menu__contact animate-none" in:fly={{duration: 500, y: -16, delay:800}} out:fade>
         <ContactBtn/>
       </li>
     </ul>
@@ -111,6 +111,13 @@
 
     .menu__item a:focus-visible {
       outline: 0.1875rem dashed var(--color-white);
+    }
+
+    .animate-none {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      animation-delay: 0.01ms !important;
     }
   }
 </style>

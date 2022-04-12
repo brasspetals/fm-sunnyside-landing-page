@@ -9,8 +9,8 @@
     display: grid;
     justify-content: center;
     align-content: center;
-    height: 56px;
-    width: 140px;
+    height: 3.5rem;
+    width: 8.75rem;
     color: var(--color-dark-blue);
     text-transform: uppercase;
     font-family: "Fraunces", serif;
