@@ -38,9 +38,9 @@ Users should be able to:
 
 ### What I learned
 
-I utilized a local variable in conjunction with a svelte variable to determine the color of the "underline" in the `LinksUnderlined` component. Not sure if this is best practice as it feels there should be a simpler way to do this, but it works!
+~~I utilized a local variable in conjunction with a svelte variable to determine the color of the "underline" in the `LinksUnderlined` component. Not sure if this is best practice as it feels there should be a simpler way to do this, but it works!~~ **Update:** Now using [the method found in this Svelte REPL](https://svelte.dev/repl/4b1c649bc75f44eb9142dadc0322eccd?version=3.6.7) to implement a CSS variable for the `LinksUnderlined` color.
 
-This was my first time using the `svelte:window` property, which I used to bind the innerWidth value to a width variable. This was handy in passing another condition to the Svelte `if` statement that determines whether the menu in the `Nav` component is shown or not.
+This was my first time using the `svelte:window` property, which I used to bind the innerWidth value to a variable. This was handy in passing another condition to the Svelte `if` statement that determines whether the menu in the `Nav` component is shown or not.
 
 ```html
 <svelte:window bind:innerWidth={width}/>
@@ -52,3 +52,4 @@ This was my first time using the `svelte:window` property, which I used to bind 
 ### Useful resources
 
 - ["px to rem"](https://marketplace.visualstudio.com/items?itemName=sainoba.px-to-rem) VSCode extension - an absolute time saver.
+- [Svelte CSS Variables REPL](https://svelte.dev/repl/4b1c649bc75f44eb9142dadc0322eccd?version=3.6.7)

@@ -5,7 +5,7 @@ export const cardPairs = [
     src: "./images/mobile/image-transform.jpg",
     srcset: "./images/desktop/image-transform.jpg",
     media: "(min-width: 750px)",
-    color: "yellow"
+    color: "var(--color-yellow)"
   },
   {
     heading: "Stand out to the right audience",
@@ -13,6 +13,6 @@ export const cardPairs = [
     src: "./images/mobile/image-stand-out.jpg",
     srcset: "./images/desktop/image-stand-out.jpg",
     media: "(min-width: 750px)",
-    color: "pink"
+    color: "var(--color-pink)"
   }
 ]

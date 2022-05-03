@@ -1,10 +1,10 @@
 <script>
-  export let color = 'pink'
+  export let color = 'hsl(7, 99%, 70%)'
   export let text = 'learn more'
   export let href = '/'
 </script>
 
-<a href="{href}" class="underlined {color}">{text}</a>
+<a href="{href}" style="--card-color: {color}" class="underlined">{text}</a>
 
 <style>
   a {
@@ -41,13 +41,5 @@
   a:focus-visible {
     outline: 0.1875rem dashed var(--color-gray-blue);
     outline-offset: 0.5rem;
-  }
-
-  .yellow {
-    --card-color: hsl(51, 100%, 49%);
-  }
-
-  .pink {
-    --card-color: hsl(7, 99%, 70%);
   }
 </style>
