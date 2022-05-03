@@ -7,12 +7,21 @@
 	import Footer from './components/layout/Footer.svelte'
 </script>
 
-<Header/>
-<main>
-	<About/>
-	<Services/>
-	<ClientTestimonials/>
-	<Gallery/>
-</main>
-<Footer/>
-<style></style>
+<div class="container">
+	<Header/>
+	<main>
+		<About/>
+		<Services/>
+		<ClientTestimonials/>
+		<Gallery/>
+	</main>
+	<Footer/>
+</div>
+
+<style>
+	.container {
+		max-width: 93.75rem;
+		margin: 0 auto;
+		box-shadow: 0rem 0rem 6rem -3rem rgba(0, 0, 0, .3);
+	}
+</style>
