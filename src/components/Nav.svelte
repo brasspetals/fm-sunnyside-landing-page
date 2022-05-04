@@ -4,17 +4,12 @@
 
   let width
   let active = false;
-  
-  function toggleMenu(state) {
-    active = typeof state === 'boolean' ? state : !active;
-  }
-
 </script>
 
 <svelte:window bind:innerWidth={width}/>
 
 <nav>
-  <button aria-label="menu toggle" aria-expanded={active} class:open={active} on:click={toggleMenu}>
+  <button aria-label="menu toggle" aria-expanded={active} class:open={active} on:click={() => active = !active}>
     <img src="/images/icon-hamburger.svg" alt="">
   </button>
   {#if active || width >= 800}
